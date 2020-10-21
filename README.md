@@ -7,7 +7,7 @@ Basic jQuery plugin to allow drag and drop:
 * dropping of dragged elements
 * sorting of lists and other nested html structures (```ul```, ```ol```, ```div``` etc.)
 
-
+This is a fork of https://github.com/gardiner/draganddrop with minor changes and added minified versions of the js and css files 
 
 Requirements
 ------------
@@ -19,23 +19,15 @@ Requirements
 Usage
 -----
 
-See [demo.html](demo/demo.html) for a working demo.
-
-1. Install draganddrop:
-
-    ```bash
-    $ bower install -S gardiner/draganddrop
-    ```
-
-2. Include jQuery and draganddrop in document head:
+1. Include jQuery and draganddrop in document head:
 
     ```html
-    <link href='bower_components/draganddrop/src/draganddrop.css' rel='stylesheet' type='text/css'/>
-    <script src='bower_components/jquery/dist/jquery.min.js' type='text/javascript'></script>
-    <script src='bower_components/draganddrop/src/draganddrop.js' type='text/javascript'></script>
+    <link href='draganddrop/dist/css/draganddrop.min.css' rel='stylesheet' type='text/css'/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src='draganddrop/dist/js/draganddrop.min.js' type='text/javascript'></script>
     ```
 
-3. Create html structure:
+2. Create html structure:
 
     ```html
     <ul id="list">
@@ -56,7 +48,7 @@ See [demo.html](demo/demo.html) for a working demo.
     <button id="drag">Drag me</button>
     ```
 
-4. Initialize draggable and sortable:
+3. Initialize draggable and sortable:
 
     ```javascript
     $('#drag').draggable(/* options/callbacks or command */);
